@@ -1,0 +1,30 @@
+name: Release and publish to NPM on new GitHub release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'package.json'
+
+  repository_dispatch:
+    types: [release]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+          cache: npm
+      - run: npm ci
+        env:
+          NODE_ENV: development
+      - run: npm run build
+      - run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

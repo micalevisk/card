@@ -1,0 +1,75 @@
+{
+  "name": "@micalevisk/card",
+  "version": "1.0.0",
+  "description": "Micael Levi's personal card.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "micalevisk-card": "bin/card.js"
+  },
+  "files": [
+    "bin",
+    "index.js",
+    "card_text"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micalevisk/card"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "node src/write-card.js",
+    "start": "./bin/card.js",
+    "format:fix": "prettier  --write .",
+    "release:check": "semantic-release --dry-run",
+    "release": "semantic-release"
+  },
+  "keywords": [
+    "personal",
+    "card"
+  ],
+  "author": {
+    "name": "Micael Levi L. C.",
+    "url": "https://github.io/micalevisk"
+  },
+  "homepage": "https://github.com/micalevisk/card",
+  "bugs": {
+    "url": "https://github.com/micalevisk/card/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "boxen": "^6.2.1",
+    "chalk-template": "^0.2.0",
+    "prettier": "^2.5.1",
+    "semantic-release": "^18.0.1"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "endOfLine": "auto",
+    "useTabs": false,
+    "semi": true,
+    "tabWidth": 2
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ],
+    "branches": [
+      "main"
+    ]
+  }
+}

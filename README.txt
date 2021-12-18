@@ -1,0 +1,1 @@
+npx @micalevisk/card
