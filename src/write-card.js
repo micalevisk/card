@@ -11,6 +11,8 @@ const text = chalkTemplate`
 {bold     Work:} {dim (please hire me)}
 {bold   GitHub:} {green https://github.com/micalevisk}
 {bold LinkedIn:} {yellow https://linkedin.com/in/micalevisk}
+
+                              {italic.dim "Memento mori."}
 `.trim();
 
 const card = boxen(text, {
