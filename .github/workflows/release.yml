@@ -1,14 +1,9 @@
 name: Release and publish to NPM on new GitHub release
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'package.json'
-
-  repository_dispatch:
-    types: [release]
+  ## Run this workflow when a GitHub release as been published
+  release:
+    types: [published]
 
 jobs:
   release:
