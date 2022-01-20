@@ -12,6 +12,7 @@ const text = chalkTemplate`
 {bold   GitHub:} {green https://github.com/micalevisk}
 {bold LinkedIn:} {yellow https://linkedin.com/in/micalevisk}
 {bold Telegram:} {blue https://t.me/micalevisk}
+{bold Trace me:} {red https://codetrace.com/users/micalevisk}
 
                               {italic.dim "Memento mori."}
 `.trim();
