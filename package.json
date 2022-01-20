@@ -43,9 +43,9 @@
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "boxen": "^6.2.1",
-    "chalk-template": "^0.2.0",
+    "chalk-template": "^0.3.1",
     "prettier": "^2.5.1",
-    "semantic-release": "^18.0.1"
+    "semantic-release": "^19.0.2"
   },
   "prettier": {
     "arrowParens": "always",
