@@ -1,9 +1,10 @@
-name: Release and publish to NPM on new GitHub release
+name: Release and publish to NPM on pushes to main
 
 on:
-  ## Run this workflow when a GitHub release as been published
-  release:
-    types: [published]
+  ## Run this workflow whenever a push to the master branch is made
+  push:
+    branches:
+      - main
 
 jobs:
   release:
