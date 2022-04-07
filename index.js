@@ -1,6 +1,6 @@
-import { join } from 'path';
+import { resolve } from 'path';
 import { readFileSync } from 'fs';
 
-const CARD_TEXT_FILE_PATH = join(new URL('card_text', import.meta.url).pathname);
+const CARD_TEXT_FILE_PATH = resolve('card_text');
 
 export const cardText = readFileSync(CARD_TEXT_FILE_PATH, 'utf-8');

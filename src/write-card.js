@@ -1,4 +1,4 @@
-import path from 'path';
+import { resolve } from 'path';
 import fs from 'fs';
 import chalkTemplate from 'chalk-template';
 import boxen from 'boxen';
@@ -26,6 +26,6 @@ const card = boxen(text, {
   borderStyle: 'doubleSingle',
 });
 
-const CARD_TEXT_FILE_PATH = path.join(new URL('..', import.meta.url).pathname, 'card_text');
+const CARD_TEXT_FILE_PATH = resolve('card_text');
 fs.writeFileSync(CARD_TEXT_FILE_PATH, card);
 console.debug(`Card saved at "${CARD_TEXT_FILE_PATH}"`);
