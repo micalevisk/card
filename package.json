@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "node src/write-card.js",
-    "start": "./bin/card.js",
+    "start": "node ./bin/card.js",
     "format:fix": "prettier  --write .",
     "release:check": "semantic-release --dry-run",
     "release": "semantic-release"
