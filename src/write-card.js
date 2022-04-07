@@ -1,7 +1,10 @@
-import { resolve } from 'path';
+import { join } from 'path';
+import { fileURLToPath } from 'url';
 import fs from 'fs';
 import chalkTemplate from 'chalk-template';
 import boxen from 'boxen';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 const currDate = new Date().toLocaleDateString();
 
@@ -26,6 +29,6 @@ const card = boxen(text, {
   borderStyle: 'doubleSingle',
 });
 
-const CARD_TEXT_FILE_PATH = resolve('card_text');
+const CARD_TEXT_FILE_PATH = join(__dirname, '..', 'card_text');
 fs.writeFileSync(CARD_TEXT_FILE_PATH, card);
 console.debug(`Card saved at "${CARD_TEXT_FILE_PATH}"`);
