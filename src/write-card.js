@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 import chalkTemplate from 'chalk-template';
 import boxen from 'boxen';
+import { generateQrCode } from './generate-qrcode.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
@@ -18,6 +19,7 @@ const text = chalkTemplate`
 {bold Trace me:} {red https://codetrace.com/users/micalevisk}
 
                               {italic.dim "Memento mori."}
+${await generateQrCode('https://github.com/micalevisk')}
 `.trim();
 
 const card = boxen(text, {
