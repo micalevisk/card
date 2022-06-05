@@ -12,9 +12,9 @@ const currDate = new Date().toLocaleDateString();
 const text = chalkTemplate`
 {italic Micael Levi L. C.}
 
-{bold     Work:} {dim (please hire me)}
+{bold     Work:} {yellow Jr. Software Developer at Tarken}
 {bold   GitHub:} {green https://github.com/micalevisk}
-{bold LinkedIn:} {yellow https://linkedin.com/in/micalevisk}
+{bold LinkedIn:} {dim https://linkedin.com/in/micalevisk}
 {bold Telegram:} {blue https://t.me/micalevisk}
 {bold Trace me:} {red https://codetrace.com/users/micalevisk}
 
