@@ -13,7 +13,7 @@ const text = chalkTemplate`
 {italic Micael Levi L. C.}
 
 {bold     Work:} {yellow Mid-level Software Developer at Tarken}
-{bold   GitHub:} {green https://github.com/micalevisk}
+{bold   GitHub:} {green https://github.com/micalevisk (core team member of NestJS framework)}
 {bold LinkedIn:} {dim https://linkedin.com/in/micalevisk}
 {bold Telegram:} {blue https://t.me/micalevisk}
 {bold Trace me:} {red https://codetrace.com/users/micalevisk}
