@@ -18,8 +18,11 @@ const text = chalkTemplate`
 {bold LinkedIn:} {dim https://linkedin.com/in/micalevisk}
 {bold Telegram:} {blue https://t.me/micalevisk}
 {bold Trace me:} {red https://codetrace.com/users/micalevisk}
+ 
+{bold Back-end roadmap:} {dim https://roadmap.sh/backend?s=65c94b64d789a518cf2d8791}
+{bold Software Archect roadmap:} {dim https://roadmap.sh/software-architect?s=65c94b64d789a518cf2d8791}
 
-                              {italic.dim "Memento mori."}
+                                                                           {italic.dim "Memento mori."}
 ${await generateQrCode('https://github.com/micalevisk')}
 `.trim();
 
