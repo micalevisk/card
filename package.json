@@ -42,11 +42,11 @@
   "license": "MIT",
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
-    "boxen": "^6.2.1",
-    "chalk-template": "^0.3.1",
-    "prettier": "^2.5.1",
+    "boxen": "^7.1.1",
+    "chalk-template": "^1.1.0",
+    "prettier": "^3.2.5",
     "qrcode-terminal": "^0.12.0",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^23.0.2"
   },
   "prettier": {
     "arrowParens": "always",
