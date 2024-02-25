@@ -12,7 +12,7 @@ const currDate = new Date().toLocaleDateString();
 const text = chalkTemplate`
 {italic Micael Levi L. C.}
 
-{bold     Work:} {yellow Mid-level Software Developer at Tarken}
+{bold     Work:} {yellow Senior Software Developer at Tarken}
 {bold   GitHub:} {green https://github.com/micalevisk}
          (core team member of NestJS framework)
 {bold LinkedIn:} {dim https://linkedin.com/in/micalevisk}
