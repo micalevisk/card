@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/micalevisk/card"
+    "url": "git+https://github.com/micalevisk/card.git"
   },
   "publishConfig": {
     "access": "public",
