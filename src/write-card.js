@@ -18,9 +18,9 @@ const text = chalkTemplate`
 {bold LinkedIn:} {dim https://linkedin.com/in/micalevisk}
 {bold Telegram:} {blue https://t.me/micalevisk}
 {bold Trace me:} {red https://codetrace.com/users/micalevisk}
- 
-{bold Back-end:} {dim https://roadmap.sh/backend?s=65c94b64d789a518cf2d8791}
-{bold SA:} {dim https://roadmap.sh/software-architect?s=65c94b64d789a518cf2d8791}
+
+📚 buy my a book, please!
+see https://www.amazon.com.br/hz/wishlist/ls/1RIN2ZRXOD1Y8
 
                                                      {italic.dim "Memento mori."}
 ${await generateQrCode('https://github.com/micalevisk')}
