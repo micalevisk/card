@@ -1,6 +1,6 @@
 {
   "name": "@micalevisk/card",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "Micael Levi's personal card.",
   "type": "module",
   "main": "index.js",

@@ -19,7 +19,7 @@ const text = chalkTemplate`
 {bold Telegram:} {blue https://t.me/micalevisk}
 {bold Trace me:} {red https://codetrace.com/users/micalevisk}
 
-📚 buy my a book, please!
+📚 buy me a book, please!
 see https://www.amazon.com.br/hz/wishlist/ls/1RIN2ZRXOD1Y8
 
                                                      {italic.dim "Memento mori."}
