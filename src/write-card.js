@@ -12,14 +12,14 @@ const currDate = new Date().toLocaleDateString();
 const text = chalkTemplate`
 {italic Micael Levi L. C.}
 
-{bold     Work:} {yellow Solutions Architect at Tarken.ag}
+{bold     Work:} {yellow Sr Software Architect at Latam Airlines}
 {bold   GitHub:} {green https://github.com/micalevisk}
          (core team member of NestJS framework)
 {bold LinkedIn:} {dim https://linkedin.com/in/micalevisk}
 {bold Telegram:} {blue https://t.me/micalevisk}
 {bold Trace me:} {red https://codetrace.com/users/micalevisk}
 
-📚 buy me a book, please!
+📚 gift me a book, please!
 see https://www.amazon.com.br/hz/wishlist/ls/1RIN2ZRXOD1Y8
 
                                                      {italic.dim "Memento mori."}
