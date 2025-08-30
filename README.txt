@@ -1,1 +1,1 @@
-npx @micalevisk/card
+npx micael
